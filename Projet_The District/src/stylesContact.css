@@ -1,0 +1,112 @@
+/* Установка flex-контейнера для body */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Устанавливаем минимальную высоту на весь экран */
+  margin: 0;
+}
+
+/* Основной контент будет заполнять оставшуюся высоту */
+main {
+  flex: 1; /* Основной контент будет растягиваться, занимая всё доступное пространство */
+  flex-direction: column;
+}
+
+/* Основные стили для корзины и формы */
+.cart-section, .contact-section {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+/* Заголовки */
+.cart-section h2, .contact-section h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Список продуктов в корзине */
+#cart-items .list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
+/* Общая сумма в корзине */
+.cart-total {
+  text-align: right;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Кнопка "Перейти к оплате" */
+#checkout-button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* Стили для формы */
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form .form-control:focus {
+  outline: none;
+  border-color: #a50f7e;
+}
+
+.contact-form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Стили для футера */
+.footer {
+  background-color: #a50f7e;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Футер автоматически перейдет в нижнюю часть контейнера */
+}
+
+.footer img {
+  height: 100px;
+  width: 100px;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .cart-section, .contact-section {
+    width: 100%;
+  }
+}

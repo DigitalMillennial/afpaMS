@@ -4,10 +4,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-image: url("/img/DALL");
+  background-size: cover;
+  background-position: center;
 }
 
 .header-container {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   background-color: #333;
@@ -48,6 +51,7 @@ nav ul li a {
   font-weight: bold;
 }
 
+/* Строка поиска и фон */
 .search-section {
   background-image: url("/img/bg6.jpeg");
   background-size: cover;
@@ -123,11 +127,12 @@ nav ul li a {
   font-weight: bold;
   transition: transform 0.3s, box-shadow 0.3s;
   will-change: transform, box-shadow;
+  margin-bottom: 10px;
 }
 
 .category img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 10px;
   object-fit: cover;
   margin-bottom: 10px;
@@ -137,29 +142,60 @@ nav ul li a {
   margin: 0;
 }
 
+/* Стиль для наименования товара */
+.category p:first-child {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Стиль для цены */
+.price {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+/* Стиль для объема (cl) */
+.weight {
+  font-size: 16px;
+  color: #777; /* Тусклый цвет */
+}
+
+.order-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.minus-btn, .plus-btn {
+  background-color: #555;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.minus-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.quantity {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
 .category:hover {
   transform: scale(1.2);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
   background-color: #f0f0f0;
-}
-
-.arrow-left, .arrow-right {
-  font-size: 48px;
-  color: #333;
-  cursor: pointer;
-  user-select: none;
-}
-
-.arrow-left {
-  position: absolute;
-  left: 0;
-  transform: translateX(-100%);
-}
-
-.arrow-right {
-  position: absolute;
-  right: 0;
-  transform: translateX(100%);
 }
 
 .footer {
@@ -171,6 +207,31 @@ nav ul li a {
 .socials-container {
   font-size: 18px;
   font-weight: bold;
+}
+
+.item-details {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  text-align: right;
+}
+
+.item-price {
+  margin-left: 15px;
+  text-align: right;
+  width: 80px;
+}
+
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 
