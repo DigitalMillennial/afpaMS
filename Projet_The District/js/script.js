@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
           li.className = 'list-group-item d-flex justify-content-between align-items-center';
           li.innerHTML = `
               <div class="item-details d-flex align-items-center">
-                  <img src="/img/food/${item.name}.png" alt="${item.name}" style="width: 50px; height: 50px; margin-right: 10px;">
+                  <img src="../img/food/${item.name}.png" alt="${item.name}" style="width: 50px; height: 50px; margin-right: 10px;">
                   <strong>${item.name}</strong>
               </div>
               <div class="quantity-control d-flex align-items-center">
