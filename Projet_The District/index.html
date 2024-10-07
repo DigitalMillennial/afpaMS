@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8">
-  <title>Restaurant</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
-  <link rel="stylesheet" href="src/styles.css">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <title>Restaurant | Meilleurs plats et saveurs délicieuses</title>
+    <meta name="description" content="Bienvenue dans notre restaurant! Découvrez nos plats délicieux et savourez le meilleur.">
+    <meta name="keywords" content="restaurant, plats, catégorie, nourriture, gastronomie, repas, accueil">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
 <body>
   <header class="header-container">
     <div class="logo">
@@ -17,7 +22,7 @@
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="Catégorie.html">Catégorie</a></li>
-        <li><a href="/src/Plats.html">Plats</a></li>
+        <li><a href="Plats.html">Plats</a></li>
         <li><a href="Contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -30,14 +35,25 @@
     </div>
   </section>
 
-  <main class="main-content">
-    <section class="categories-section">
-      <h1>Bienvenue dans notre restaurant!</h1>
-      <p>Découvrez nos plats délicieux et savourez le meilleur.</p>
-      <a href="Catégorie.html" class="btn btn-primary">Voir les catégories</a>
-    </section>
+  <main class="premier">
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay main-content"></div>  
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="/img/economiseur.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white categories-section">
+          <h1>Bienvenue dans notre restaurant!</h1>      
+      <a href="Catégorie.html" class="btn btn-primary m-5">Voir les catégories</a>
+        </div>
+      </div>
+    </div>
   </main>
-
   <footer class="footer">
     <img src="/img/the_district_brand/logo_transparent.png" alt="Logo" style="height: 100px; width: 100px;">
   </footer>
