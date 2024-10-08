@@ -1,12 +1,5 @@
 <?php include 'header.php'; ?>
 
-<section class="search-section">
-  <div class="search-container">
-    <input type="text" placeholder="Recherche...">
-    <button>Rechercher</button>
-  </div>
-</section>
-
 <main class="premier">
   <!-- This div is intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
   <div class="overlay main-content"></div>  

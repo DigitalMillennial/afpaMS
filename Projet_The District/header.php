@@ -28,3 +28,9 @@
       </ul>
     </nav>
   </header>
+  <section class="search-section">
+    <div class="search-container">
+      <input type="text" placeholder="Recherche...">
+      <button>Rechercher</button>
+    </div>
+  </section>
