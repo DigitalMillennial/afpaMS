@@ -4,13 +4,13 @@
   <section class="categories-section">
     <div class="categories-container">
       <div class="category">
-        <a href="beverages.php">
+        <a href="Beverages.php">
           <img src="/img/category/drink.png" alt="Beverages">
           <p>Boissons</p>
         </a>
       </div>
       <div class="category">
-        <a href="main-courses.php">
+        <a href="main-courses.html">
           <img src="/img/category/pngfood-recipe.png" alt="Main Courses">
           <p>Plats principaux</p>
         </a>

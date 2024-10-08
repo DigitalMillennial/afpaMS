@@ -23,7 +23,7 @@
     <div class="col-12" id="form-section" style="display: none">
       <section class="contact-section p-3 bg-light rounded">
         <h1>Contactez-Nous</h1>
-        <form class="contact-form">
+        <form class="contact-form" action="process_form.php" method="POST">  
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name">Nom</label>
@@ -31,6 +31,7 @@
                 type="text"
                 class="form-control"
                 id="name"
+                name="name"
                 placeholder="Nom"
                 required
               />
@@ -42,6 +43,7 @@
                 type="text"
                 class="form-control"
                 id="surname"
+                name="surname"
                 placeholder="Prénom"
                 required
               />
@@ -55,6 +57,7 @@
                 type="email"
                 class="form-control"
                 id="email"
+                name="email"
                 placeholder="Email"
                 required
               />
@@ -66,6 +69,7 @@
                 type="tel"
                 class="form-control"
                 id="phone"
+                name="phone"
                 placeholder="Téléphone"
                 required
               />
@@ -77,6 +81,7 @@
             <textarea
               class="form-control"
               id="message"
+              name="message"
               rows="4"
               placeholder="Votre message"
               required
